@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="School building illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#93C5FD" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="980" cy="140" r="54" fill="#FDE68A"/>
+  <circle cx="980" cy="140" r="54" fill="#F59E0B" opacity="0.12"/>
+  <path d="M0 570C170 520 270 630 430 590s230-10 360 20 260-60 410-20V800H0Z" fill="#DCFCE7"/>
+  <path d="M0 610c190-35 280 70 460 40s240-30 360 0 230-45 380-10V800H0Z" fill="#BBF7D0" opacity="0.85"/>
+
+  <!-- Building -->
+  <g filter="url(#shadow)">
+    <!-- Base -->
+    <rect x="210" y="250" width="780" height="420" rx="28" fill="url(#wall)" stroke="#CBD5E1" stroke-width="6"/>
+
+    <!-- Roof -->
+    <path d="M170 290 600 160 1030 290v36H170z" fill="url(#roof)"/>
+    <path d="M180 290 600 175 1020 290" fill="none" stroke="#93C5FD" stroke-width="8" opacity="0.35"/>
+
+    <!-- Entrance block -->
+    <rect x="485" y="380" width="230" height="290" rx="20" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="6"/>
+    <path d="M500 420h200" stroke="#CBD5E1" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Door -->
+    <rect x="545" y="470" width="110" height="200" rx="14" fill="#0F172A" opacity="0.92"/>
+    <rect x="555" y="485" width="90" height="170" rx="10" fill="url(#glass)" opacity="0.85"/>
+    <circle cx="642" cy="575" r="7" fill="#FDE68A"/>
+
+    <!-- Columns -->
+    <rect x="455" y="410" width="18" height="260" rx="9" fill="#CBD5E1"/>
+    <rect x="727" y="410" width="18" height="260" rx="9" fill="#CBD5E1"/>
+
+    <!-- Sign -->
+    <rect x="420" y="290" width="360" height="80" rx="18" fill="#0EA5E9" opacity="0.95"/>
+    <rect x="420" y="290" width="360" height="80" rx="18" fill="none" stroke="#38BDF8" stroke-width="6" opacity="0.9"/>
+    <text x="600" y="342" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="40" font-weight="800" fill="#FFFFFF">
+      SCHOOL
+    </text>
+
+    <!-- Windows -->
+    <g stroke="#94A3B8" stroke-width="5">
+      <!-- left wing -->
+      <rect x="260" y="330" width="130" height="90" rx="14" fill="url(#glass)"/>
+      <rect x="260" y="450" width="130" height="90" rx="14" fill="url(#glass)"/>
+      <rect x="260" y="570" width="130" height="90" rx="14" fill="url(#glass)"/>
+
+      <rect x="410" y="330" width="130" height="90" rx="14" fill="url(#glass)"/>
+      <rect x="410" y="450" width="130" height="90" rx="14" fill="url(#glass)"/>
+      <rect x="410" y="570" width="130" height="90" rx="14" fill="url(#glass)"/>
+
+      <!-- right wing -->
+      <rect x="660" y="330" width="130" height="90" rx="14" fill="url(#glass)"/>
+      <rect x="660" y="450" width="130" height="90" rx="14" fill="url(#glass)"/>
+      <rect x="660" y="570" width="130" height="90" rx="14" fill="url(#glass)"/>
+
+      <rect x="810" y="330" width="130" height="90" rx="14" fill="url(#glass)"/>
+      <rect x="810" y="450" width="130" height="90" rx="14" fill="url(#glass)"/>
+      <rect x="810" y="570" width="130" height="90" rx="14" fill="url(#glass)"/>
+    </g>
+
+    <!-- Steps -->
+    <path d="M430 670h340" stroke="#94A3B8" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+    <path d="M450 700h300" stroke="#94A3B8" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+  </g>
+
+  <!-- Decorative trees -->
+  <g opacity="0.95">
+    <path d="M160 690c30-120 80-160 130-160 50 0 100 40 130 160" fill="#16A34A" opacity="0.9"/>
+    <rect x="275" y="640" width="24" height="90" rx="12" fill="#A16207"/>
+    <circle cx="150" cy="690" r="18" fill="#14532D" opacity="0.35"/>
+    <circle cx="420" cy="690" r="18" fill="#14532D" opacity="0.35"/>
+  </g>
+</svg>
